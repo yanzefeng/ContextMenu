@@ -8,7 +8,7 @@ const ContextMenu = function (options) {
     let e = options.event;
     e.preventDefault();
   } catch (e) {
-    console.log(e);
+    console.log(e, '123123');
   }
   if (Vue.prototype.$isServer) return;
   return new Promise((resolve, reject) => {
